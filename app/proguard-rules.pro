@@ -1,0 +1,4 @@
+-keepattributes *Annotation*
+-keep class com.username051203.textingstory.data.model.** { *; }
+-keep class com.google.gson.** { *; }
+-dontwarn com.google.gson.**

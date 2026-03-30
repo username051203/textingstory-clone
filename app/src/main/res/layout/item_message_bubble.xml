@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="4dp">
+
+    <!-- LEFT bubble -->
+    <LinearLayout android:id="@+id/layoutLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp">
+
+        <ImageButton android:id="@+id/btnAdd"
+            android:layout_width="28dp" android:layout_height="28dp"
+            android:src="@drawable/ic_add_circle"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:visibility="gone" />
+        <ImageButton android:id="@+id/btnDelete"
+            android:layout_width="28dp" android:layout_height="28dp"
+            android:src="@drawable/ic_remove_circle"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:visibility="gone" />
+
+        <ImageView android:id="@+id/ivAvatarLeft"
+            android:layout_width="40dp" android:layout_height="40dp"
+            android:layout_marginEnd="8dp" />
+
+        <TextView android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="260dp"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- RIGHT bubble -->
+    <LinearLayout android:id="@+id/layoutRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="8dp"
+        android:visibility="gone">
+
+        <TextView android:id="@+id/tvMessageRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="260dp"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <ImageView android:id="@+id/ivAvatarRight"
+            android:layout_width="40dp" android:layout_height="40dp"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <ImageView android:id="@+id/ivAvatar"
+            android:layout_width="48dp" android:layout_height="48dp"
+            android:scaleType="centerCrop" />
+
+        <View android:id="@+id/viewColorSwatch"
+            android:layout_width="12dp" android:layout_height="48dp"
+            android:layout_marginStart="8dp" />
+
+        <TextView android:id="@+id/tvCharName"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp" />
+
+        <TextView android:id="@+id/tvSide"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:alpha="0.6"
+            android:layout_marginEnd="8dp" />
+
+        <ImageButton android:id="@+id/btnColor"
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:src="@drawable/ic_palette"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <ImageButton android:id="@+id/btnSide"
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:src="@drawable/ic_swap"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <ImageButton android:id="@+id/btnDelete"
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:src="@drawable/ic_delete"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

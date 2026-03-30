@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+
+            <!-- Mode -->
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mode" android:textSize="13sp" android:alpha="0.6" android:layout_marginBottom="8dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnLight" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="@string/light" android:layout_marginEnd="4dp"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnDark" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="@string/dark" android:layout_marginStart="4dp"/>
+            </LinearLayout>
+
+            <!-- Video Format -->
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/video_format" android:textSize="13sp" android:alpha="0.6" android:layout_marginTop="20dp" android:layout_marginBottom="8dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnSquare" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="@string/square" android:layout_marginEnd="4dp"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnVertical" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="@string/vertical"/>
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnVerticalKeyboard" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/vertical_keyboard" android:layout_marginTop="4dp"/>
+
+            <!-- Video Speed -->
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/video_speed" android:textSize="13sp" android:alpha="0.6" android:layout_marginTop="20dp" android:layout_marginBottom="8dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnX1" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="X1" android:layout_marginEnd="4dp"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnX2" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="X2"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnX3" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="X3" android:layout_marginStart="4dp"/>
+            </LinearLayout>
+
+            <!-- Show Typing -->
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/show_typing" android:textSize="13sp" android:alpha="0.6" android:layout_marginTop="20dp" android:layout_marginBottom="8dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnTypingOn" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="@string/on" android:layout_marginEnd="4dp"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnTypingOff" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="@string/off"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="4dp">
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnTypingLeft" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="@string/left_only" android:layout_marginEnd="4dp"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnTypingRight" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="@string/right_only"/>
+            </LinearLayout>
+
+            <!-- Typing Sound -->
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/typing_sound" android:textSize="13sp" android:alpha="0.6" android:layout_marginTop="20dp" android:layout_marginBottom="8dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnSoundOn" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="@string/on" android:layout_marginEnd="4dp"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnSoundOff" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="@string/off"/>
+            </LinearLayout>
+
+            <!-- Keep Corrections -->
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/keep_corrections" android:textSize="13sp" android:alpha="0.6" android:layout_marginTop="20dp" android:layout_marginBottom="8dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnCorrectionsOn" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="@string/on" android:layout_marginEnd="4dp"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnCorrectionsOff" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="@string/off"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
